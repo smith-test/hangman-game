@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hangman game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
 </head>
-<body>
-    
+<body class="flex-center">
+    <h1 class="mb-30">The Hangman Game</h1>
+     <div id="randomWord" class="randomWord" >placeholder for randome word</div>
+    <div id="wrong">
+        <h2 id="changeLetterColor">HANGMAN</h2>
+    </div>
+    <h3 class="message-header mb-30">Placeholder for message about result</h3>
+    <div>
+        <input id="nextLetter" class="input">
+    <button  class="buttons" id="submitLetter">Submit Letter</button>
+    <input id="finalAnswer" class="input">
+    <button class="buttons"  id="submitAnswer">Submit Answer</button>
+    </div>
+    <div class="submittedLetters" name="Letters Submitted">
+        <h3>Letters Submitted</h3>
+        <div>
+            <ul title="Letters Submitted" id="wrongLetter"></ul>
+        </div>
+        </div>
+    <div id="gameStatus">
+    <button class="buttons">Continue</button>
+    <button class="buttons">Quit</button>
+    </div>
 </body>
 </html>

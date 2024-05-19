@@ -1,0 +1,56 @@
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+   body {
+    height: 100vh;
+    flex-direction: column;
+    display: grid;
+    grid-area: auto;
+   }
+
+   h1 {
+    font-family: Impact, Haettenschweiler;
+    font-size: xx-large;
+    padding-bottom: 10%
+    ;
+   }
+
+   h2 {
+    color:blue
+   }
+
+   .randomWord {
+     word-spacing: 3%;
+     font-size: larger;
+     color: #eb1212;
+   }
+
+     h3 {
+    font-family: arial;
+    font-size: xx-large;
+    padding-bottom: 10%
+    ;
+   }
+  .buttons {
+    background-color: rgb(168, 243, 161);
+    color: black;
+    font-weight: 800;
+ }
+
+  .mb-30 {
+    margin-bottom: 40px;
+  }
+
+  .submittedLetters {
+    display: grid;
+    height: 20vh;
+
+  }
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
