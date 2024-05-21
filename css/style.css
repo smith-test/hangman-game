@@ -8,14 +8,13 @@
     height: 100vh;
     flex-direction: column;
     display: grid;
-    grid-area: auto;
+    grid-template-rows: 1fr 1fr;
    }
 
    h1 {
     font-family: Impact, Haettenschweiler;
     font-size: xx-large;
-    padding-bottom: 10%
-    ;
+    padding-bottom: 10%;
    }
 
    h2 {
@@ -26,27 +25,29 @@
      word-spacing: 3%;
      font-size: larger;
      color: #eb1212;
+     border-color: blue
    }
 
-     h3 {
+  h4 {
     font-family: arial;
     font-size: xx-large;
     padding-bottom: 10%
     ;
    }
-  .buttons {
+
+   .buttons {
     background-color: rgb(168, 243, 161);
     color: black;
     font-weight: 800;
  }
 
-  .mb-30 {
-    margin-bottom: 40px;
-  }
-
-  .submittedLetters {
+   .submittedLetters {
     display: grid;
     height: 20vh;
+    border-color: aquamarine;
+    border-style: dashed;
+    margin-right: 800px;
+    margin-bottom: 60px;
 
   }
  * {
