@@ -4,36 +4,39 @@ const prompt = require('prompt-sync')();
 console.log('Here is my hangman game')
 
 /**----Cached Elements---- */
-const startButtonEl = document.getElementById('startButton');
-// const submitLetterEl = document.getElementById('submitLetter');
-// const response = document.querySelector('h4.message-header');
-// const randomWord = document.querySelector('h3.randomWord')
+//const startButtonEl = document.getElementById('startButton');
 
-startButtonEl.addEventListener('click', handleStart);
-// submitLetterEl.addEventListener('click', submitLetter)
+
+//startButtonEl.addEventListener('click', handleStart);
+
 /**-------State----------- */
 
-const hangman = [
-    ['H'], //starts at array 0
-    ['d'], 
-    ['s'], 
-    ['d'], 
-    ['d'], 
-    ['d'], 
-    ['d'],
+const hangmanIndicator = [
+    [''], //starts at array 0
+    [''], 
+    [''], 
+    [''], 
+    [''], 
+    [''], 
+    [''],
 ];
 
+let nextGuess = document.getElementById('nextLetter')
 let correctLetter = true
 let correctAnswer = true
- 
 
+//Below is where the random work will be broken out into Array
+let arr = []
+const randomWord = "Sunflower"
+//arr += randomWord
+arr = randomWord.split("");
 
 /*--------------Logic---------- */
 main ()
 
 
 function main () {
-    
+    console.log(hangmanIndicator);
     while(!correctAnswer) {
         response = (`${answer}Not the correct Answer`);
         //change hangman to highlight next letter
@@ -47,10 +50,15 @@ function main () {
          //Display Quit Button
         //Display Continue Button
     }
+    const nextGuess = prompt("enter a letter:  ")
+    if (nextGuess === 'b') {
+        console.log(`${nextGuess} is wrong answer`);
+    } else
+    console.log(arr[0])
 };
 
 function renderAnswer() {
-    console.log(correctAnswer)
+    console.log("correctAnswer")
 }
 
 function renderLetter() {
@@ -69,3 +77,4 @@ function handleStart() {
 function submitLetter() {
     console.log("user submitted Letter")
 }
+

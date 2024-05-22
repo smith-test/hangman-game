@@ -4,6 +4,13 @@
     justify-content: center;
   }
  
+  .hangManIndicator {
+    background-color: yellow;
+   }
+   .letter {
+    color: white
+   }
+
    body {
     height: 100vh;
     flex-direction: column;
@@ -31,8 +38,8 @@
   h4 {
     font-family: arial;
     font-size: xx-large;
-    padding-bottom: 10%
-    ;
+    padding-bottom: 10%;
+    color: black
    }
 
    .buttons {
@@ -48,9 +55,9 @@
     border-style: dashed;
     margin-right: 800px;
     margin-bottom: 60px;
-
   }
- * {
+
+  * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
