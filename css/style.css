@@ -1,63 +1,74 @@
 .flex-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
  
-  .hangManIndicator {
-    letter-spacing: 30px;
-    padding: 5%;
-    border-style: dotted;
-   }
-   .letter {
-    color: white
+.hangManIndicator {
+  letter-spacing: 30px;
+  padding: 5%;
+  border-style: dotted;
+}
+.letter {
+  color: white
+}
+
+h1 {
+  font-family: Impact, Haettenschweiler;
+  font-size: xx-large;
+  padding-bottom: 3%;
    }
 
-   h1 {
-    font-family: Impact, Haettenschweiler;
-    font-size: xx-large;
-    padding-bottom: 3%;
-   }
+.message-header {
+  color: black
+}
 
-   h3 {
-    color:blue
-   }
+h3 {
+  color:blue
+}
   
-   .randomWordBorder {
-    border-style: groove; 
-    border-color: green;
-   }
-   .randomWord {
-    letter-spacing: 40px;
-    font-size: larger;
-    color: white;
-  
-   }
+.randomWordBorder {
+  border-style: groove; 
+  border-color: rgb(125, 228, 100);
+}
+.randomWord {
+  letter-spacing: 40px;
+  font-size: larger;
+  color: rgb(24, 22, 22);
+}
 
-   .buttons {
-    background-color: rgb(168, 243, 161);
-    color: black;
-    font-weight: 800;
- }
+.buttons {
+  background-color: rgb(168, 243, 161);
+  color: black;
+  font-weight: 800;
+}
 
-   .keyboard {
-    display: flex;
-    border-color: rgb(68, 219, 169);
-    border-style: solid
-    margin-center: 30px;
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  border-color: rgb(68, 219, 169);
+  border-style: solid;
+}
 
+.wrong {
+  color: red;
   }
-  .wrong {
-    background-color: red;
-  }
-  body {
-    height: 100vh;
-    flex-direction: column;
-    flex-wrap: wrap;
-    }
 
-   .startClicked {
-      background-color: white;
-      color: #f8f5f5;
-    }
+
+body {
+  height: 100vh;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.startClicked {
+  background-color: white;
+  color: #f8f5f5;
+}
+
+em { 
+  text-decoration: underline; 
+  font-weight: bold;
+}
+ 

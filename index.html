@@ -9,10 +9,14 @@
 </head>
 <body class="flex-center">
     <h1>The Hangman Game</h1>
+    <div>
     <button id="startButton" class="buttons">Start Game</button>
-    <p>To start the game, click Start Game.  Each time you guess a word wrong, you 
+    <button class="buttons" id="resetGame">Reset Game</button>
+    </div>
+    <p>To start the game, click <em>Start Game</em>.  Each time you guess a word wrong, you 
         will get a letter to "HANGMAN".  Use the letter buttons to guess your letter.
     </p>
+
     <div class="hangManIndicator" id="hangman">
     <span>H</span>
     <span>A</span>
@@ -22,11 +26,13 @@
     <span>A</span>
     <span>N</span>
     </div>
-    <h2>Here is your Word: </h2>
+
+    <h2 class="message-header" ></h2>
+
     <div class="randomWordBorder">
-    <h3 class="randomWord"></h2>
+    <h3 class="randomWord"></h3>
     </div>
-    <h4 class="message-header"></h3>
+    
     <div class="keyboard" >
        <button >A</button> 
        <button >B</button>
@@ -54,9 +60,8 @@
        <button >X</button>
        <button >Y</button>
        <button >Z</button>
-      </div> 
-        <button class="buttons" id="restartGame">Restart</button>
-        <button class="buttons" id="quitGame">Quit</button>
-    </div>
+    </div> 
+ 
+       
 </body>
 </html>

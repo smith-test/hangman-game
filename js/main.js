@@ -3,18 +3,17 @@
 
 /**----Cached Elements---- */
 const startButtonEl = document.getElementById('startButton'); //variable for my Start Game button
-const restartEl = document.getElementById('restartGame');
-const quit = document.getElementById('quitGame');
-const hangmanStatus = document.getElementById('hangman');
+const resetEl = document.getElementById('resetGame');
+const hangmanStatusEl = document.getElementById('hangman');
+const message = ("Welcome to Hangman! Here is your Word: ")
+const letterEl = document.getElementsByTagName('button')  //grabbing the keyboard letters
 
 startButtonEl.addEventListener('click', handleStart);  //event listener for my Start Game button
-restartEl.addEventListener('click', restartGame);
-quit.addEventListener('click', quitGame);
-
+resetEl.addEventListener('click', resetGame);  //event listener for reseting game
+letterEl.addEventListener('click', grabLetter); //event listener for keyboard clicks
 
 /**-------State----------- */
 let wrongGuesses = 0;
-let message;
 
 
 /**------------Random Word------------- */
@@ -24,51 +23,45 @@ const randomWord = ("Sunflower")
 arr += randomWord.replace(',' , '');
 //arr = randomWord.split('').replace(',' , '');
 
-/**===Message----- */
-message = ("Welcome to Hangman!")
-let displayMessage = document.getElementsByTagName('h3').textContent = message
-
-
 /*--------------Logic---------- */
 init ()
 
 
 function init () {
-    console.log(message);
+    
     
    };
+
+
 
 //function to handle when user clicks Start Game
 function handleStart() {
     document.getElementById('startButton').classList.add("startClicked");
-    console.log("User clicked Start");
+    document.querySelector('.message-header').innerHTML = message;
+    //cument.getElementsByTagName('h2').classList.add("message-header");
     showRandomWord();
 }
 
+//Once Start is clicked, the random word box will show
 function showRandomWord() {
     console.log(arr);
     document.querySelector('.randomWord').innerHTML = arr;
 }
 
-
+//This function will handle the Hangman letters after each wrong guess
 function updateHangmanIndicator(){
-   
     document.getElementById('hangman').getElementsByTagName('span')[wrongGuesses - 1].classList.add("wrong");
-    console.log(hangmanStatus);
+    console.log(hangmanStatusEl);
 
 }
 
-function quitGame(){
-    message = ("Welcome to Hangman")
+//this function will reset the game
+function resetGame(){   
     //reset HangMan
-    //remove random word (if needed)
     location.reload();  //this refreshes the browser
 
 }
 
-function restartGame() {
-    console.log("restart the game");
-    location.reload();
-    init;
-};
-
+function grabLetter() {
+    console.log(letterEl);
+}
