@@ -9,9 +9,14 @@
   letter-spacing: 30px;
   padding: 5%;
   border-style: dotted;
+  color: white
 }
 .letter {
   color: white
+}
+
+.key {
+  color: black;
 }
 
 h1 {

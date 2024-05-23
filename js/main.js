@@ -6,11 +6,11 @@ const startButtonEl = document.getElementById('startButton'); //variable for my 
 const resetEl = document.getElementById('resetGame');
 const hangmanStatusEl = document.getElementById('hangman');
 const message = ("Welcome to Hangman! Here is your Word: ")
-const letterEl = document.getElementsByTagName('button')  //grabbing the keyboard letters
+//let letterEl = document.querySelector('.keyboard')  //grabbing the keyboard letters
 
 startButtonEl.addEventListener('click', handleStart);  //event listener for my Start Game button
 resetEl.addEventListener('click', resetGame);  //event listener for reseting game
-letterEl.addEventListener('click', grabLetter); //event listener for keyboard clicks
+//letterEl.addEventListener('click', grabLetter); //event listener for keyboard clicks
 
 /**-------State----------- */
 let wrongGuesses = 0;
@@ -28,7 +28,7 @@ init ()
 
 
 function init () {
-    
+    grabLetter();
     
    };
 
@@ -38,7 +38,6 @@ function init () {
 function handleStart() {
     document.getElementById('startButton').classList.add("startClicked");
     document.querySelector('.message-header').innerHTML = message;
-    //cument.getElementsByTagName('h2').classList.add("message-header");
     showRandomWord();
 }
 
@@ -63,5 +62,15 @@ function resetGame(){
 }
 
 function grabLetter() {
-    console.log(letterEl);
+   document.onkeydown = function(evt) {
+    const key = evt.key;
+    if(key.length !== 1 || key.valueOf(String)) {
+        console.log(`${key} "is a letter"`);
+        
+    } else {
+        document.querySelector('.message-header').innerHTML = ("Reset and Start Game then Enter a single letter only")
+    }
+
+   }
+   
 }
