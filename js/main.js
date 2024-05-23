@@ -43,6 +43,7 @@ function handleStart() {
 
 //Once Start is clicked, the random word box will show
 function showRandomWord() {
+    document.getElementById('randomWord').classList.add("showWordBorder");
     console.log(arr);
     document.querySelector('.randomWord').innerHTML = arr;
 }
@@ -66,7 +67,7 @@ function grabLetter() {
     const key = evt.key;
     if(key.length !== 1 || key.valueOf(String)) {
         console.log(`${key} "is a letter"`);
-        
+
     } else {
         document.querySelector('.message-header').innerHTML = ("Reset and Start Game then Enter a single letter only")
     }

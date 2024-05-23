@@ -32,15 +32,17 @@ h1 {
 h3 {
   color:blue
 }
-  
-.randomWordBorder {
-  border-style: groove; 
-  border-color: rgb(125, 228, 100);
+
+.showWordBorder {
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom-style: solid;
+  border-color: green;
+  padding: 10px;
 }
 .randomWord {
   letter-spacing: 40px;
   font-size: larger;
-  color: rgb(24, 22, 22);
+  color:white
 }
 
 .buttons {
