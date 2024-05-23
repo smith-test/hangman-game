@@ -1,45 +1,38 @@
 .flex-center {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
  
   .hangManIndicator {
-    background-color: yellow;
+    letter-spacing: 30px;
+    padding: 5%;
+    border-style: dotted;
    }
    .letter {
     color: white
    }
 
-   body {
-    height: 100vh;
-    flex-direction: column;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-   }
-
    h1 {
     font-family: Impact, Haettenschweiler;
     font-size: xx-large;
-    padding-bottom: 10%;
+    padding-bottom: 3%;
    }
 
-   h2 {
+   h3 {
     color:blue
    }
-
-   .randomWord {
-     word-spacing: 3%;
-     font-size: larger;
-     color: #eb1212;
-     border-color: blue
+  
+   .randomWordBorder {
+    border-style: groove; 
+    border-color: green;
    }
-
-  h4 {
-    font-family: arial;
-    font-size: xx-large;
-    padding-bottom: 10%;
-    color: black
+   .randomWord {
+    letter-spacing: 40px;
+    font-size: larger;
+    color: white;
+  
    }
 
    .buttons {
@@ -48,17 +41,23 @@
     font-weight: 800;
  }
 
-   .submittedLetters {
-    display: grid;
-    height: 20vh;
-    border-color: aquamarine;
-    border-style: dashed;
-    margin-right: 800px;
-    margin-bottom: 60px;
-  }
+   .keyboard {
+    display: flex;
+    border-color: rgb(68, 219, 169);
+    border-style: solid
+    margin-center: 30px;
 
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
   }
+  .wrong {
+    background-color: red;
+  }
+  body {
+    height: 100vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+
+   .startClicked {
+      background-color: white;
+      color: #f8f5f5;
+    }

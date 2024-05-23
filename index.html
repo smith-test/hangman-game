@@ -10,21 +10,51 @@
 <body class="flex-center">
     <h1>The Hangman Game</h1>
     <button id="startButton" class="buttons">Start Game</button>
-
+    <p>To start the game, click Start Game.  Each time you guess a word wrong, you 
+        will get a letter to "HANGMAN".  Use the letter buttons to guess your letter.
+    </p>
     <div class="hangManIndicator" id="hangman">
+    <span>H</span>
+    <span>A</span>
+    <span>N</span>
+    <span>G</span>
+    <span>M</span>
+    <span>A</span>
+    <span>N</span>
     </div>
-    <h3 class="randomWord" >placeholder for random word</h3>
-    <h4 class="message-header"></h4>
-    <input id="nextLetter" class="input" title="letter" maxlength="1">
-    <button  class="buttons" id="submitLetter">Submit Letter</button>
-     <input id="finalAnswer" class="input" title="answer">
-     <button class="buttons"  id="submitAnswer">Submit Answer</button>
+    <h2>Here is your Word: </h2>
+    <div class="randomWordBorder">
+    <h3 class="randomWord"></h2>
     </div>
-    <div class="submittedLetters" name="Letters Submitted">
-       Letters Submitted
-        <ul id="letters"></ul>
-    </div>
-    <div id="gameStatus">
+    <h4 class="message-header"></h3>
+    <div class="keyboard" >
+       <button >A</button> 
+       <button >B</button>
+       <button >C</button>
+       <button >D</button>
+       <button >E</button>
+       <button >F</button>
+       <button >G</button>
+       <button >H</button>
+       <button >I</button>
+       <button >J</button>
+       <button >K</button>
+       <button >L</button>
+       <button >M</button>
+       <button >N</button>
+       <button >O</button>
+       <button >P</button>
+       <button >Q</button>
+       <button >R</button>
+       <button >S</button>
+       <button >T</button>
+       <button >U</button>
+       <button >V</button>
+       <button >W</button>
+       <button >X</button>
+       <button >Y</button>
+       <button >Z</button>
+      </div> 
         <button class="buttons" id="restartGame">Restart</button>
         <button class="buttons" id="quitGame">Quit</button>
     </div>
