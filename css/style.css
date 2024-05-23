@@ -1,15 +1,19 @@
-.flex-center {
+ 
+body {
+  height: 150vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
- 
-.hangManIndicator {
+p {
+  text-align: center;
+  padding: 5px;
+}
+ .hangManIndicator {
   letter-spacing: 30px;
-  padding: 5%;
+  padding: 2%;
   border-style: dotted;
-  color: white
+  color: rgb(245, 235, 235)
 }
 .letter {
   color: white
@@ -22,7 +26,7 @@
 h1 {
   font-family: Impact, Haettenschweiler;
   font-size: xx-large;
-  padding-bottom: 3%;
+  padding-bottom: 3px;
    }
 
 .message-header {
@@ -52,8 +56,7 @@ h3 {
 }
 
 .keyboard {
-  display: flex;
-  flex-wrap: wrap;
+  padding: 10px;
   border-color: rgb(68, 219, 169);
   border-style: solid;
 }
@@ -64,9 +67,10 @@ h3 {
 
 
 body {
-  height: 100vh;
+  height: 150vh;
+  display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  align-items: center;
 }
 
 .startClicked {
@@ -76,5 +80,10 @@ body {
 em { 
   text-decoration: underline; 
   font-weight: bold;
+}
+
+changeButton {
+  color: black;
+  display: z
 }
  
