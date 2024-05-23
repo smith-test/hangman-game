@@ -68,8 +68,7 @@ body {
 }
 
 .startClicked {
-  background-color: white;
-  color: #f8f5f5;
+  display: none
 }
 
 em { 
